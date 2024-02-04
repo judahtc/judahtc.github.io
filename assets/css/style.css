@@ -870,6 +870,10 @@ a:hover {
     /* margin-right: auto; */
     /* text-align: center; */
   }
+
+  .skills-image{
+    margin-top: 10%;
+  }
 }
 
 .skill-mf span {
