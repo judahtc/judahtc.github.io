@@ -21,6 +21,10 @@ const router = [
                 element: <Home />,
                 path: "",
             },
+            {
+                element: <Home />,
+                path: "portfolio",
+            },
 
             {
                 element: <Allprojects />,
