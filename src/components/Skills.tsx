@@ -1,9 +1,4 @@
 export default function Skills() {
-    type itemType = {
-        name: String;
-        technologies: [String];
-        icon: any;
-    };
     const item: any = [
         {
             name: "Frontend",
@@ -121,7 +116,7 @@ export default function Skills() {
     );
 }
 
-export function Card({ item }) {
+export function Card({ item }: any) {
     return (
         <>
             <div className="grid grid-cols-2 mx-32">
@@ -134,14 +129,16 @@ export function Card({ item }) {
                         <div className="flex flex-col items-start">
                             <div>{inst.name}</div>
                             <div className="text-xs  grid grid-cols-5   items-start">
-                                {inst.technologies.map((tech, index) => (
-                                    <span
-                                        className="bg-slate-50 px-2 mr-1 rounded mt-1"
-                                        key={index}
-                                    >
-                                        {tech}
-                                    </span>
-                                ))}
+                                {inst.technologies.map(
+                                    (tech: string, index: string) => (
+                                        <span
+                                            className="bg-slate-50 px-2 mr-1 rounded mt-1"
+                                            key={index}
+                                        >
+                                            {tech}
+                                        </span>
+                                    )
+                                )}
                             </div>
                         </div>
                     </div>
