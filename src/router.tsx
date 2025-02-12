@@ -30,6 +30,10 @@ const router = [
                 element: <Allprojects />,
                 path: "/projects",
             },
+            {
+                element: <Skills />,
+                path: "/skills",
+            },
         ],
     },
     {
