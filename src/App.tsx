@@ -41,7 +41,7 @@ function App() {
                     <Outlet />
                 </div>
 
-                <div className="whatsapp fixed right-2 bottom-40">
+                <div className="whatsapp fixed right-3 lg:right-10 bottom-5 lg:bottom-10">
                     <Link to="https://wa.me/+263785430774">
                         <svg
                             to="https://wa.me/+@63785430774"
