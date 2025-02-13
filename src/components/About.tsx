@@ -40,14 +40,14 @@ export default function About() {
     return (
         <>
             <div
-                className="lg:ml-52 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-r from-white via-slate-50  to-blue-50 py-3 px-3" // Added opacity and translation
+                className="lg:ml-36 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-br  lg:py-3 lg:px-3 px-2 " // Added opacity and translation
                 id="animatedText"
                 style={localstyle}
             >
                 <div className="title lg:hidden  font-bold text-lg lg:ml-3 md:ml-3  text-gray-700  lg:font-extrabold lg:text-2xl mb-5 lg:text-white md:font-extrabold md:text-2xl  md:text-white">
                     ⚡About Me
                 </div>
-                <div className="lg:w-11/12 lg:ml-3 lg:mb-3 lg:text-base w-full ml-3 mb-3 text-[0.99rem] text-gray-700">
+                <div className="lg:w-11/12 lg:ml-3 lg:mb-3 lg:text-base w-full ml-3 mb-3 text-[0.90rem] leading-6">
                     <p className="first mb-3 mr-3">
                         I am a passionate software Engineer experienced in
                         architecturing, designing and developing Enterprice Web
