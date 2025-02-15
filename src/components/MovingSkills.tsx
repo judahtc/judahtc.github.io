@@ -1,6 +1,6 @@
 const MovingSkills = () => {
     return (
-        <div className="px-4 lg:px-0  bg-gray-50 md:py-36 md:mt-24 lg:py-36 lg:mt-24 py-20 mt-24 text-gray-400  shadow-sm w-[99%]">
+        <div className="px-4 lg:px-0  bg-gray-50 dark:bg-transparent dark:text-white md:py-36 md:mt-24 lg:py-36 lg:mt-24 py-20 mt-24 text-gray-400  shadow-sm w-[99%]">
             <div className="mx-auto lg:w-3/4 md:w-3/4 container flex flex-col items-center space-y-16">
                 <div className="flex flex-col items-center">
                     <span className=" lg:text-4xl md:text-4xl text-xl mb-3 -mt-6">

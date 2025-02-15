@@ -58,7 +58,7 @@ export default function Work() {
                                     src={patients_visitor}
                                 ></img>
                             </div>
-                            <div className="bg-gray-50 -mt-2">
+                            <div className="bg-gray-50 dark:bg-transparent dark:text-white -mt-2">
                                 <div className="mt-2 p-2 mx-2 ">
                                     <div className="description flex items-center justify-between">
                                         <div className="font-bold text-xl">
