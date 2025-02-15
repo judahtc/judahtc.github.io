@@ -15,7 +15,7 @@ import SkillsPic from "./SkillsPic";
 import { SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 export default function Home() {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
     function ToggleTheme() {
         if (theme == "light") {
             setTheme("dark");
