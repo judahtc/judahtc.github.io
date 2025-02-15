@@ -12,7 +12,25 @@ import Work from "./Work";
 
 import HeroSection from "./HeroSection";
 import SkillsPic from "./SkillsPic";
+import { SunMoon } from "lucide-react";
+import { useEffect, useState } from "react";
 export default function Home() {
+    const [theme, setTheme] = useState("dark");
+    function ToggleTheme() {
+        if (theme == "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
+    }
+
+    useEffect(() => {
+        if (theme == "dark") {
+            document.querySelector("html")?.classList.add("dark");
+        } else {
+            document.querySelector("html")?.classList.remove("dark");
+        }
+    }, [theme]);
     return (
         <>
             <div className="flex items-center shadow-sm lg:pb-32 pb-12">
@@ -29,8 +47,14 @@ export default function Home() {
                 </div>
             </div>
             <Devider />
-
+            <div
+                onClick={ToggleTheme}
+                className="fixed bottom-20 right-4 cursor-pointer"
+            >
+                <SunMoon size={36} />
+            </div>
             <Certs />
+
             <Experties />
             <Articles />
             <MovingSkills />
