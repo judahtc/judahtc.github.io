@@ -50,7 +50,7 @@ export default function Experties() {
 
     return (
         <div className="">
-            <div className="experties  mt-24  mx-6 mb-20 px-3  py-12  md:mt-24  md:mx-6 md:mb-20 md:px-16 md:py-12  lg:mt-24  lg:mx-6 lg:mb-20 lg:px-16 lg:py-12  bg-gray-50   rounded-lg text-gray-700 relative">
+            <div className="experties  mt-24  mx-6 mb-20 px-3  py-12  md:mt-24  md:mx-6 md:mb-20 md:px-16 md:py-12  lg:mt-24  lg:mx-6 lg:mb-20 lg:px-16 lg:py-12  bg-gray-50  dark:text-gray-50 dark:bg-transparent dark:border dark:border-gray-50   rounded-lg text-gray-700 relative">
                 <div className="absolute right-2 top-2 text-md text-gray-400 ">
                     <a href="/skills" className="flex items-center space-x-2">
                         <span>Explore</span>

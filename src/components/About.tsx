@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import judahimage2 from "/src/assets/images/judahimage2.jpg";
-import { Camera } from "lucide-react";
 export default function About() {
     const [readMore, setReadMore] = useState(true);
 

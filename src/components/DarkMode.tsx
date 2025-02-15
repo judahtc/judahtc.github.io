@@ -6,13 +6,13 @@ export default function DarkMode({ mode }: any) {
         setTheme(mode);
     }
 
-    function ToggleTheme() {
-        if (theme == "light") {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
-    }
+    // function ToggleTheme() {
+    //     if (theme == "light") {
+    //         setTheme("dark");
+    //     } else {
+    //         setTheme("light");
+    //     }
+    // }
 
     useEffect(() => {
         if (theme == "dark") {
