@@ -82,7 +82,7 @@ export default function HeroSection() {
                     </p>
 
                     <div className=" flex items-center space-x-2  mt-6 font-bold text-sm lg:text-base md:text-base">
-                        <div className="github bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                        <div className="github bg-gray-100 dark:bg-black dark:text-black hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
                             <a
                                 target="_blank"
                                 href="https://github.com/judahtc"
