@@ -1,3 +1,4 @@
+import { Lightbulb, LucideLightbulb, Moon, SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
@@ -134,7 +135,8 @@ export default function NavBar() {
             {toggle && (
                 <div className="text-white px-4 pb-3 absolute top-0 lg:hidden block  md:hidden right-0 w-80 h-[50rem] bg-black rounded-bl-xl slideNav">
                     <div className="flex items-center justify-between mt-5">
-                        <div className="font-bold">{me1}</div>
+                        <SunMoon />
+
                         <div className="cursor-pointer" onClick={toggleFunc}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
