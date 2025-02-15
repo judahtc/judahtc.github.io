@@ -44,7 +44,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className=" flex items-center space-x-2  mt-6 font-semibold lg:text-base md:text-base text-sm">
-                            <div className="linkedin bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                            <div className="linkedin dark:bg-transparent dark:text-white dark:border dark:border-gray-50 bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
                                 <a
                                     target="_blank"
                                     href="https://www.linkedin.com/in/judah-t-chisare-a1b998174/"
@@ -56,7 +56,7 @@ export default function Footer() {
                                         height="18"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="green"
+                                        stroke="currentColor"
                                         stroke-width="1.5"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -75,7 +75,7 @@ export default function Footer() {
                                     <span>LinkedIn</span>
                                 </a>
                             </div>
-                            <div className="email bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                            <div className="email dark:bg-transparent dark:text-white dark:border dark:border-gray-50 bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
                                 {" "}
                                 <a
                                     target="_blank"
@@ -88,7 +88,7 @@ export default function Footer() {
                                         height="18"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="green"
+                                        stroke="currentColor"
                                         stroke-width="1.5"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -107,7 +107,7 @@ export default function Footer() {
                                 </a>
                             </div>
 
-                            <div className="github bg-gray-100 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                            <div className="github bg-gray-100 dark:bg-transparent dark:text-white dark:border dark:border-gray-50 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
                                 <a
                                     target="_blank"
                                     href="https://drive.google.com/file/d/1bvldXKYswjGPBBtjz6uMf2cPtlrX97fl/view?usp=drive_link"
@@ -119,7 +119,7 @@ export default function Footer() {
                                         height="18"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="green"
+                                        stroke="currentColor"
                                         stroke-width="1.5"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"

@@ -71,9 +71,12 @@ export default function Articles() {
                         <div className="articles ">
                             <div className="one  border border-gray-200  py-4  px-4  rounded-lg flex flex-col items-center">
                                 <div className="">
-                                    <img src={nodejslambda3}></img>
+                                    <img
+                                        className="dark:rounded-lg"
+                                        src={nodejslambda3}
+                                    ></img>
                                 </div>
-                                <div className="bg-gray-50 px-4 py-4 rounded-md">
+                                <div className="bg-gray-50 dark:bg-transparent dark:text-white px-4 py-4 rounded-md">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base "
                                         style={{ color: "##222222" }}
@@ -97,7 +100,7 @@ export default function Articles() {
                     <div className="flex flex-col items-start space-y-3">
                         <div className="cursor-pointer" onClick={article2}>
                             <div className="articles">
-                                <div className="one  border border-gray-200  py-6  px-8 bg-gray-50 rounded-lg">
+                                <div className="one  border border-gray-200 dark:bg-transparent dark:text-white  py-6  px-8 bg-gray-50 rounded-lg">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base"
                                         style={{ color: "##222222" }}
@@ -117,7 +120,7 @@ export default function Articles() {
                         </div>
                         <div className="cursor-pointer" onClick={article3}>
                             <div className="articles">
-                                <div className="one  border border-gray-200  py-6  px-8 bg-gray-50 rounded-lg">
+                                <div className="one  border border-gray-200  py-6  px-8 bg-gray-50 dark:bg-transparent dark:text-white rounded-lg">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base"
                                         style={{ color: "##222222" }}
