@@ -6,7 +6,7 @@ export default function NavBar() {
     const me1 = "{ JC }";
 
     const [toggle, SetToggle] = useState(false);
-
+    const [theme, setTheme] = useState("light");
     function toggleFunc() {
         SetToggle(!toggle);
     }
