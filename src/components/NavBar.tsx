@@ -28,7 +28,7 @@ export default function NavBar() {
     }, [theme]);
 
     return (
-        <div className="navbar bg-gray-50 dark:bg-black dark:text-white w-full z-50 shadow-neutral-200 fixed">
+        <div className="navbar bg-gray-50 dark:bg-[#0b0b0b] dark:text-white w-full z-50 shadow-neutral-200 fixed">
             <div className="  text-gray-500 flex items-center justify-between py-3 lg:px-24 md:px-24 px-2 w-full font-bold">
                 <div className="font-bold text-2xl">
                     <svg
