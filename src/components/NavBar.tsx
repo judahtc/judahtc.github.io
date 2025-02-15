@@ -10,6 +10,15 @@ export default function NavBar() {
     function toggleFunc() {
         SetToggle(!toggle);
     }
+
+    function ToggleTheme() {
+        if (theme == "light") {
+            setTheme("dark");
+        } else {
+            setTheme("light");
+        }
+    }
+
     return (
         <div className="navbar bg-gray-50 w-full z-50 shadow-neutral-200 fixed">
             <div className="  text-gray-500 flex items-center justify-between py-3 lg:px-24 md:px-24 px-2 w-full font-bold">
