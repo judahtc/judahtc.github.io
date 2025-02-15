@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 export default function NavBar() {
@@ -6,7 +6,7 @@ export default function NavBar() {
     const me1 = "{ JC }";
 
     const [toggle, SetToggle] = useState(false);
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
     function toggleFunc() {
         SetToggle(!toggle);
     }
@@ -19,8 +19,16 @@ export default function NavBar() {
         }
     }
 
+    useEffect(() => {
+        if (theme == "dark") {
+            document.querySelector("html")?.classList.add("dark");
+        } else {
+            document.querySelector("html")?.classList.remove("dark");
+        }
+    }, [theme]);
+
     return (
-        <div className="navbar bg-gray-50 w-full z-50 shadow-neutral-200 fixed">
+        <div className="navbar bg-gray-50 dark:bg-black dark:text-white w-full z-50 shadow-neutral-200 fixed">
             <div className="  text-gray-500 flex items-center justify-between py-3 lg:px-24 md:px-24 px-2 w-full font-bold">
                 <div className="font-bold text-2xl">
                     <svg
