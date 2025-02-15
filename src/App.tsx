@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import NavBar from "./components/NavBar";
 // import { Outdent } from "lucide-react";
 import { Outlet } from "react-router-dom";
-
+import { Camera } from "lucide-react";
 function App() {
     useEffect(() => {
         const animatedTextOne = document.getElementById("one");

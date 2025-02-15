@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import judahimage2 from "/src/assets/images/judahimage2.jpg";
+import { Camera } from "lucide-react";
 export default function About() {
     const [readMore, setReadMore] = useState(true);
 
@@ -47,6 +48,7 @@ export default function About() {
                 <div className="title lg:hidden  font-bold text-lg lg:ml-3 md:ml-3  text-gray-700  lg:font-extrabold lg:text-2xl mb-5 lg:text-white md:font-extrabold md:text-2xl  md:text-white">
                     ⚡About Me
                 </div>
+
                 <div className="lg:w-11/12 lg:ml-3 lg:mb-3 lg:text-base w-full ml-3 mb-3 text-[0.90rem] leading-6">
                     <p className="first mb-3 mr-3">
                         I am a passionate software Engineer experienced in
