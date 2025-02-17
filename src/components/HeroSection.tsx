@@ -21,20 +21,20 @@ export default function HeroSection() {
                     <p className="text-xl lg:text-3xl md:text-3xl font-bold text-green-700">
                         Hey there, l'm
                     </p>
-                    <span className="text-3xl lg:text-6xl md:text-6xl font-extrabold text-gray-700 z-50">
+                    <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50">
                         Judah Chisare
                     </span>
 
-                    <p className="mt-7 w-3/4 md:w-3/4 lg:w-3/4 text-lg lg:text-2xl md:text-2xl">
+                    <p className="mt-7 w-3/4 md:w-3/4 lg:w-3/4 text-lg lg:text-3xl md:text-2xl">
                         <span className=" font-bold">Software Engineer.</span>
-                        <span className="text-base md:text-xl">
+                        <span className="text-base md:text-2xl">
                             {" "}
                             A full stack Software Engineer with robust
                             experience in AWS cloud engineering
                         </span>
                     </p>
 
-                    <p className="mt-7 text-base ">
+                    <p className="mt-7 text-base lg:text-lg ">
                         {" "}
                         <div className="flex space-x-1 items-start">
                             <span>🚀</span>{" "}
@@ -43,7 +43,7 @@ export default function HeroSection() {
                                 <span className="text-gray-500">
                                     <span className="text-red-400">(</span>
                                     <span className="text-yellow-500">
-                                        (Django/Flask/FastAPI)
+                                        (Django/Flask/FastAPI/Node.js)
                                     </span>
                                     +{" "}
                                     <span className="text-blue-500">
@@ -54,14 +54,14 @@ export default function HeroSection() {
                             </span>
                         </div>
                     </p>
-                    <p className="mt-2 text-base">
+                    <p className="mt-2 text-base lg:text-lg">
                         {" "}
                         <div className="flex space-x-1 items-start">
                             <span>🌐</span>
                             <span> AWS specialist and technical blogger</span>
                         </div>
                     </p>
-                    <p className="mt-2 text-base">
+                    <p className="mt-2 text-base lg:text-lg">
                         {" "}
                         <div className="flex space-x-1 items-start">
                             {" "}
@@ -81,7 +81,7 @@ export default function HeroSection() {
                         </div>
                     </p>
 
-                    <div className=" flex items-center space-x-2  mt-6 font-bold text-sm lg:text-base md:text-base">
+                    <div className=" flex items-center space-x-2  mt-6 font-semibold text-sm lg:text-lg md:text-base">
                         <div className="github bg-gray-100 dark:bg-transparent dark:border dark:text-zinc-400 hover:bg-gray-200 dark:border-zinc-900 dark:hover:bg-zinc-900 lg:dark:pr-2 lg:dark:py-1  px-2   py-[0.4rem] pr-3  rounded">
                             <a
                                 target="_blank"
