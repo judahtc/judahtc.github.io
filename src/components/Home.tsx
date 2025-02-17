@@ -14,14 +14,24 @@ import HeroSection from "./HeroSection";
 import SkillsPic from "./SkillsPic";
 import { Moon, MoonStar, SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
+
 export default function Home() {
     var themeMode = localStorage.getItem("theme");
+
     var [lightMode, SetlightMode] = useState(true);
     if (themeMode == "" || themeMode == " " || themeMode == undefined) {
         themeMode = "light";
     }
 
     const [theme, setTheme] = useState(themeMode);
+
+    useEffect(() => {
+        if (theme == "light") {
+            SetlightMode(true);
+        } else {
+            SetlightMode(false);
+        }
+    }, []);
     function ToggleTheme() {
         if (theme == "light") {
             setTheme("dark");
@@ -29,9 +39,9 @@ export default function Home() {
 
             localStorage.setItem("theme", "dark");
         } else {
-            SetlightMode(true);
             setTheme("light");
             localStorage.setItem("theme", "light");
+            SetlightMode(true);
         }
     }
 
@@ -74,7 +84,11 @@ export default function Home() {
                 onClick={ToggleTheme}
                 className="fixed block lg:hidden bottom-20 right-5 cursor-pointer lg:top-[1.4rem] text-gray-600 dark:text-zinc-400 lg:right-5 z-50"
             >
-                {lightMode ? <Moon size={32} /> : <SunMoon size={32} />}
+                {lightMode ? (
+                    <MoonStar fill="#4B5563" size={32} />
+                ) : (
+                    <SunMoon size={32} />
+                )}
             </div>
             <Certs />
 
