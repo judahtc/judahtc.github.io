@@ -12,7 +12,7 @@ import Work from "./Work";
 
 import HeroSection from "./HeroSection";
 import SkillsPic from "./SkillsPic";
-import { Moon, MoonStar, SunMoon } from "lucide-react";
+import { MoonStar, SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Home() {
