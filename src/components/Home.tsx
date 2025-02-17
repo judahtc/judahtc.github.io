@@ -39,7 +39,7 @@ export default function Home() {
     }, [theme]);
     return (
         <>
-            <div className="flex items-center shadow-sm dark:shadow-zinc-950 lg:pb-32 pb-12">
+            <div className="flex items-center shadow-sm dark:shadow-none dark:border-b dark:border-zinc-900 lg:pb-32 pb-12">
                 <HeroSection />
                 <div className="hidden lg:block md:block">
                     <SkillsPic />

@@ -34,21 +34,25 @@ export default function About() {
     }, []); // Empty dependency array ensures this effect runs only once
 
     const localstyle = {
-        fontFamily: "Raleway, Arial, sans-serif",
+        fontFamily:
+            'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+        fontSize: "18px",
+        fontWeight: 400,
+        lineHeight: "24px",
     };
 
     return (
         <>
             <div
-                className="lg:ml-36 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-br  lg:py-3 lg:px-3 px-2 dark:text-zinc-400" // Added opacity and translation
+                className="custom-base-text left-20 lg:ml-36 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-br  lg:py-3 lg:px-3 px-2 dark:text-zinc-400" // Added opacity and translation
                 id="animatedText"
                 style={localstyle}
             >
-                <div className="title lg:hidden dark:text-zinc-900  font-bold text-lg lg:ml-3 md:ml-3  text-gray-700  lg:font-extrabold lg:text-2xl mb-5 lg:text-white md:font-extrabold md:text-2xl  md:text-white">
+                <div className="title  dark:text-zinc-400  font-bold text-lg dmd:ml-3  text-gray-700  lg:font-extrabold lg:text-2xl mb-5 lg:text-gray-600 md:font-extrabold md:text-2xl  md:text-white">
                     ⚡About Me
                 </div>
 
-                <div className="lg:w-11/12 lg:ml-3 lg:mb-3 lg:text-base w-full ml-3 mb-3 text-[0.90rem] leading-6">
+                <div className="lg:w-10/12 lg:ml-3 lg:mb-3 lg:text-base lg:leading-7 w-full ml-3 mb-3 text-[0.90rem] leading-6 ">
                     <p className="first mb-3 mr-3">
                         I am a passionate software Engineer experienced in
                         architecturing, designing and developing Enterprice Web

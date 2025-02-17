@@ -21,11 +21,11 @@ export default function HeroSection() {
                     <p className="text-xl lg:text-3xl md:text-3xl font-bold text-green-700">
                         Hey there, l'm
                     </p>
-                    <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50">
+                    <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50 dark:text-zinc-300">
                         Judah Chisare
                     </span>
 
-                    <p className="mt-7 w-3/4 md:w-3/4 lg:w-3/4 text-lg lg:text-3xl md:text-2xl">
+                    <p className="mt-7 w-3/4 md:w-3/4 lg:w-[75%] text-lg lg:text-3xl md:text-2xl">
                         <span className=" font-bold">Software Engineer.</span>
                         <span className="text-base md:text-2xl">
                             {" "}
@@ -34,12 +34,13 @@ export default function HeroSection() {
                         </span>
                     </p>
 
-                    <p className="mt-7 text-base lg:text-lg ">
+                    <p className="mt-7 text-base lg:text-lg lg:w-3/5">
                         {" "}
                         <div className="flex space-x-1 items-start">
                             <span>🚀</span>{" "}
                             <span>
-                                Majoring in Enterprise Systems Development
+                                Majoring in Enterprise Systems Development and
+                                Intergration <br></br>
                                 <span className="text-gray-500">
                                     <span className="text-red-400">(</span>
                                     <span className="text-yellow-500">
