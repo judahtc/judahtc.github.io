@@ -6,7 +6,7 @@ export default function HeroSection() {
     };
     return (
         <>
-            <div className="">
+            <div className="dark:text-zinc-400">
                 <div
                     className="ml-6 mt-8  lg:ml-28 lg:mt-8 md:ml-28 md:mt-12"
                     style={globalStyle}
