@@ -74,7 +74,7 @@ export default function HeroSection() {
                         {" "}
                         <div className="flex space-x-1 items-start">
                             {" "}
-                            <span>⚡</span>
+                            <span>👨‍💻</span>
                             <span>
                                 {" "}
                                 Senior Software Engineer at{" "}
