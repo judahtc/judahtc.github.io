@@ -27,7 +27,7 @@ export default function Events() {
 
     return (
         <div className=" hidden lg:block md:block text-gray-700">
-            <div className="flex lg:flex-row md:flex-row flex-col space-x-8 md:mx-32 lg:mx-32 mx-8 mt-8 rounded-md shadow-sm ">
+            <div className="flex lg:flex-row md:flex-row flex-col space-x-8 md:mx-32 lg:mx-32 mx-8 mt-8 rounded-md shadow-sm dark:shadow-black ">
                 <img
                     className="rounded-s-lg"
                     style={{ height: "20rem", width: "20rem" }}
@@ -48,7 +48,7 @@ export default function Events() {
                     </div>
                 </div>
             </div>
-            <div className="flex  space-x-8 lg:mx-32 md:mx-32 mx-8 md:mt-8 lg:mt-8 mt-20 rounded-md shadow-sm  pl-8">
+            <div className="flex  space-x-8 lg:mx-32 md:mx-32 mx-8 md:mt-8 lg:mt-8 mt-20 rounded-md shadow-sm dark:shadow-black  pl-8">
                 <div>
                     <div className=" pt-5 lg:pt-16 md:pt-16">
                         <div className="font-semibold text-2xl">
