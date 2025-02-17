@@ -76,7 +76,7 @@ export default function Articles() {
                                         src={nodejslambda3}
                                     ></img>
                                 </div>
-                                <div className="bg-gray-50 dark:bg-transparent dark:text-white px-4 py-4 rounded-md">
+                                <div className="bg-gray-50 dark:bg-transparent dark:text-zinc-400 px-4 py-4 rounded-md">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base "
                                         style={{ color: "##222222" }}
