@@ -3,7 +3,7 @@ export default function Devider() {
         <>
             <div className="mt-24 mx-28">
                 <div className="flex items-center space-x-6">
-                    <div className="flex-1 h-px bg-gray-100"></div>
+                    <div className="flex-1 h-px bg-gray-100 dark:bg-zinc-900"></div>
                     <span className="text-red-500 font-bold">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ export default function Devider() {
                             height="20"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="#E5E7EB"
+                            stroke="#18181B"
                             stroke-width="1.5"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -22,7 +22,7 @@ export default function Devider() {
                             <path d="M2 12h20" />
                         </svg>
                     </span>
-                    <div className="flex-1 h-px bg-gray-100"></div>
+                    <div className="flex-1 h-px bg-gray-100 dark:bg-zinc-900"></div>
                 </div>
             </div>
         </>
