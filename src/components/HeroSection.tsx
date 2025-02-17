@@ -82,7 +82,7 @@ export default function HeroSection() {
                     </p>
 
                     <div className=" flex items-center space-x-2  mt-6 font-bold text-sm lg:text-base md:text-base">
-                        <div className="github bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50 dark:border-gray-50  hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                        <div className="github bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50 hover:bg-gray-200 dark:border-zinc-900 dark:hover:bg-zinc-900 lg:dark:pr-2 lg:dark:py-1  px-2   py-[0.4rem] pr-3  rounded">
                             <a
                                 target="_blank"
                                 href="https://github.com/judahtc"
@@ -131,7 +131,7 @@ export default function HeroSection() {
                                 <span>Github</span>
                             </a>
                         </div>
-                        <div className="linkedin bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50 dark:border-gray-50 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                        <div className="linkedin bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50  hover:bg-gray-200 px-2 py-[0.4rem] pr-3 dark:border-zinc-900 dark:hover:bg-zinc-900 lg:dark:pr-2 lg:dark:py-1  rounded">
                             <a
                                 target="_blank"
                                 href="https://www.linkedin.com/in/judah-t-chisare-a1b998174/"
@@ -158,7 +158,7 @@ export default function HeroSection() {
                                 <span>LinkedIn</span>
                             </a>
                         </div>
-                        <div className="email bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50 dark:border-gray-50 hover:bg-gray-200 px-2 py-[0.4rem] pr-3  rounded">
+                        <div className="email bg-gray-100 dark:bg-transparent dark:border dark:text-gray-50  hover:bg-gray-200 px-2 py-[0.4rem] pr-3 dark:border-zinc-900 dark:hover:bg-zinc-900 lg:dark:pr-2 lg:dark:py-1  rounded">
                             {" "}
                             <a
                                 target="_blank"
