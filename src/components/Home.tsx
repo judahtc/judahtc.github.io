@@ -49,9 +49,9 @@ export default function Home() {
             <Devider />
             <div
                 onClick={ToggleTheme}
-                className="fixed bottom-20 right-4 cursor-pointer lg:top-4 lg:right-5 z-50"
+                className="fixed bottom-20 right-4 cursor-pointer lg:top-[1.4rem] text-gray-600 dark:text-zinc-400 lg:right-5 z-50"
             >
-                <SunMoon size={32} />
+                <SunMoon size={24} />
             </div>
             <Certs />
 
