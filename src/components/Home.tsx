@@ -15,12 +15,18 @@ import SkillsPic from "./SkillsPic";
 import { SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 export default function Home() {
-    const [theme, setTheme] = useState("light");
+    var themeMode = localStorage.getItem("theme");
+    if (themeMode == "" || themeMode == " " || themeMode == undefined) {
+        themeMode = "light";
+    }
+    const [theme, setTheme] = useState(themeMode);
     function ToggleTheme() {
         if (theme == "light") {
             setTheme("dark");
+            localStorage.setItem("theme", "dark");
         } else {
             setTheme("light");
+            localStorage.setItem("theme", "light");
         }
     }
 
