@@ -51,7 +51,7 @@ export default function Articles() {
                 {/* <div className="text-center text-5xl font-semibold my-24 mt-32">📖 Blogs</div> */}
 
                 <div className="flex  items-center justify-between my-5">
-                    <span className="lg:text-xl md:text-xl text-lg font-bold">
+                    <span className="lg:text-xl md:text-xl text-lg dark:text-zinc-400 font-bold">
                         📰 Articles
                     </span>{" "}
                     <a
@@ -63,13 +63,13 @@ export default function Articles() {
                     </a>
                 </div>
 
-                <div className="flex lg:flex-row md:flex-row flex-col mb-10 lg:space-x-7 md:space-x-7 space-y-3 md:space-y-0 lg:space-y-0 text-gray-600">
+                <div className="flex lg:flex-row md:flex-row flex-col mb-10 lg:space-x-7  md:space-x-7 space-y-3 md:space-y-0 lg:space-y-0 text-gray-600">
                     <div
                         className=" lg:w-2/3 md:w-2/3 cursor-pointer"
                         onClick={article1}
                     >
                         <div className="articles ">
-                            <div className="one  border border-gray-200  py-4  px-4  rounded-lg flex flex-col items-center">
+                            <div className="one  border border-gray-200  dark:border-zinc-900 dark:text-zinc-400 dark:bg-zinc-950  py-4  px-4  rounded-lg flex flex-col items-center">
                                 <div className="">
                                     <img
                                         className="dark:rounded-lg"
@@ -100,7 +100,7 @@ export default function Articles() {
                     <div className="flex flex-col items-start space-y-3">
                         <div className="cursor-pointer" onClick={article2}>
                             <div className="articles">
-                                <div className="one  border border-gray-200 dark:bg-transparent dark:text-white  py-6  px-8 bg-gray-50 rounded-lg">
+                                <div className="one  border border-gray-200  dark:border-zinc-900 dark:text-zinc-400 dark:bg-zinc-950 dark:bg-transparent   py-6  px-8 bg-gray-50 rounded-lg">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base"
                                         style={{ color: "##222222" }}
@@ -120,7 +120,7 @@ export default function Articles() {
                         </div>
                         <div className="cursor-pointer" onClick={article3}>
                             <div className="articles">
-                                <div className="one  border border-gray-200  py-6  px-8 bg-gray-50 dark:bg-transparent dark:text-white rounded-lg">
+                                <div className="one  border border-gray-200  dark:border-zinc-900 dark:text-zinc-400 dark:bg-zinc-950  py-6  px-8 bg-gray-50 dark:bg-transparent  rounded-lg">
                                     <p
                                         className="font-semibold lg:text-xl md:text-xl text-base"
                                         style={{ color: "##222222" }}
