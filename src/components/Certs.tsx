@@ -10,7 +10,7 @@ export default function Certs() {
                     <div className="mb-16"></div>
 
                     <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:gap-x-9 gap-2 items-start mt-10 gap-y-9 mx-4  md:mx-0">
-                        <div className="cert border hover:bg-gray-50 border-gray-200 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full  relative">
+                        <div className="cert border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200 dark:border-zinc-900 dark:text-zinc-400  rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full  relative">
                             <div className="bg-slate-100 p-3 rounded-[0.25rem]">
                                 <svg
                                     viewBox="0 0 300.7 179.8"
@@ -51,7 +51,7 @@ export default function Certs() {
                                 <span className="font-semibold">01</span>
                                 <span>
                                     AWS Certified Developer - Associate{" "}
-                                    <span style={{ color: "white" }}>
+                                    <span className="text-white dark:text-zinc-950 dark:hover:text-zinc-900">
                                         - Associate
                                     </span>
                                 </span>
@@ -81,7 +81,7 @@ export default function Certs() {
                                 </a>
                             </div>
                         </div>
-                        <div className="cert border hover:bg-gray-50 border-gray-200 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
+                        <div className="cert border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200 dark:border-zinc-900 dark:text-zinc-400 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
                             <div className="bg-slate-100 p-3 rounded-[0.25rem]">
                                 <svg
                                     viewBox="0 0 300.7 179.8"
@@ -151,7 +151,7 @@ export default function Certs() {
                             </div>
                         </div>
 
-                        <div className="cert border hover:bg-gray-50 border-gray-200 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
+                        <div className="cert border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200 dark:border-zinc-900 dark:text-zinc-400 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
                             <div className="bg-slate-100 p-3 rounded-[0.25rem]">
                                 <svg
                                     viewBox="0 0 300.7 179.8"
@@ -220,7 +220,7 @@ export default function Certs() {
                                 </a>
                             </div>
                         </div>
-                        <div className="cert border hover:bg-gray-50 border-gray-200 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
+                        <div className="cert border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200 dark:border-zinc-900 dark:text-zinc-400 rounded-md px-4 py-3 flex items-center space-x-2 lg:w-[98%]  w-full relative">
                             <div className="bg-slate-100 p-3 rounded-[0.25rem]">
                                 <svg
                                     width="40"
