@@ -110,7 +110,7 @@ export default function NavBar() {
                     <div className="nav-items  lg:space-x-5 lg:flex-row lg:font-bold md:space-x-5 md:flex-row md:font-bold text">
                         <NavLink to="/">
                             {" "}
-                            <span className="hover:bg-white px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
+                            <span className="hover:bg-white dark:text-zinc-400 dark:hover:bg-zinc-900 px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
                                 Home
                             </span>
                         </NavLink>
@@ -118,12 +118,12 @@ export default function NavBar() {
                             target="_blank"
                             href="https://awsfordevelopers.hashnode.dev/"
                         >
-                            <span className="hover:bg-white px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
+                            <span className="hover:bg-white dark:text-zinc-400 dark:hover:bg-zinc-900 px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
                                 Blog
                             </span>
                         </a>
                         <Link to="/projects">
-                            <span className="hover:bg-white px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
+                            <span className="hover:bg-white dark:text-zinc-400 dark:hover:bg-zinc-900 px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
                                 Projects
                             </span>
                         </Link>
