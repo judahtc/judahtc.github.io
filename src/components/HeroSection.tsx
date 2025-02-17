@@ -65,6 +65,13 @@ export default function HeroSection() {
                     </p>
                     <p className="mt-2 text-base lg:text-lg">
                         {" "}
+                        <div className="flex space-x-1 items-start bg-gray-50 dark:bg-zinc-900 rounded pr-2 w-fit">
+                            <span>🎓</span>
+                            <span> BSc (Honours) Computer Science</span>
+                        </div>
+                    </p>
+                    <p className="mt-2 text-base lg:text-lg">
+                        {" "}
                         <div className="flex space-x-1 items-start">
                             {" "}
                             <span>⚡</span>
