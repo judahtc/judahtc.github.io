@@ -12,19 +12,24 @@ import Work from "./Work";
 
 import HeroSection from "./HeroSection";
 import SkillsPic from "./SkillsPic";
-import { SunMoon } from "lucide-react";
+import { Moon, MoonStar, SunMoon } from "lucide-react";
 import { useEffect, useState } from "react";
 export default function Home() {
     var themeMode = localStorage.getItem("theme");
+    var [lightMode, SetlightMode] = useState(true);
     if (themeMode == "" || themeMode == " " || themeMode == undefined) {
         themeMode = "light";
     }
+
     const [theme, setTheme] = useState(themeMode);
     function ToggleTheme() {
         if (theme == "light") {
             setTheme("dark");
+            SetlightMode(false);
+
             localStorage.setItem("theme", "dark");
         } else {
+            SetlightMode(true);
             setTheme("light");
             localStorage.setItem("theme", "light");
         }
@@ -53,17 +58,23 @@ export default function Home() {
                 </div>
             </div>
             <Devider />
+
             <div
                 onClick={ToggleTheme}
                 className="fixed bottom-20 hidden lg:block right-6 cursor-pointer lg:top-[1.4rem] text-gray-600 dark:text-zinc-400 lg:right-5 z-50"
             >
-                <SunMoon size={24} />
+                {lightMode ? (
+                    <MoonStar fill="#4B5563" size={20} />
+                ) : (
+                    <SunMoon size={24} />
+                )}
             </div>
+
             <div
                 onClick={ToggleTheme}
                 className="fixed block lg:hidden bottom-20 right-5 cursor-pointer lg:top-[1.4rem] text-gray-600 dark:text-zinc-400 lg:right-5 z-50"
             >
-                <SunMoon size={32} />
+                {lightMode ? <Moon size={32} /> : <SunMoon size={32} />}
             </div>
             <Certs />
 
