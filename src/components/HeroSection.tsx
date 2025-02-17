@@ -40,7 +40,8 @@ export default function HeroSection() {
                             <span>🚀</span>{" "}
                             <span>
                                 Majoring in Enterprise Systems Development and
-                                Intergration <br></br>
+                                Intergration{" "}
+                                <br className="hidden lg:block md:block"></br>
                                 <span className="text-gray-500">
                                     <span className="text-red-400">(</span>
                                     <span className="text-yellow-500">
