@@ -23,14 +23,14 @@ export function Allprojects() {
                             </div>
 
                             <div className="flex lg:flex-row md:flex-row flex-col items-center mt-5 w-full lg:space-x-12 md:space-x-12 space-x-0 lg:mx-0 space-y-9 md:space-y-0 lg:space-y-0">
-                                <div className=" border border-gray-100 rounded-lg lg:mx-0 md:mx-0 mx-8">
+                                <div className=" border border-gray-100 dark:border-zinc-900 dark:text-zinc-400 rounded-lg lg:mx-0 md:mx-0 mx-8 ">
                                     <div>
                                         <img
                                             className="rounded-tl-lg rounded-tr-lg"
                                             src={patients_visitor}
                                         ></img>
                                     </div>
-                                    <div className="bg-gray-50 -mt-2">
+                                    <div className="bg-gray-50 dark:bg-zinc-950  -mt-2">
                                         <div className="mt-2 p-2 mx-2 ">
                                             <div className="description flex items-center justify-between">
                                                 <div className="font-bold text-xl">
@@ -109,7 +109,7 @@ export function Allprojects() {
                                                     <span> Angular</span>
                                                 </div>
 
-                                                <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100">
+                                                <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100 dark:border-zinc-900 dark:text-zinc-400">
                                                     <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="12"
@@ -169,14 +169,14 @@ export function Allprojects() {
                                     </div>
                                 </div>
                                 <div className="space-y-12">
-                                    <div className=" border border-gray-100 rounded-lg lg:mx-0 md:mx-0 mx-8">
+                                    <div className=" border border-gray-100 dark:border-zinc-900 dark:text-zinc-400 rounded-lg lg:mx-0 md:mx-0 mx-8">
                                         <div>
                                             <img
                                                 className="rounded-tl-lg rounded-tr-lg"
                                                 src={gate}
                                             ></img>
                                         </div>
-                                        <div className="bg-gray-50 -mt-2">
+                                        <div className="bg-gray-50 dark:bg-zinc-950 -mt-2">
                                             <div className="mt-2 p-2 mx-2 ">
                                                 <div className="description flex items-center justify-between">
                                                     <div className="font-bold text-xl">
@@ -256,7 +256,7 @@ export function Allprojects() {
                                                         <span> Angular</span>
                                                     </div>
 
-                                                    <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100">
+                                                    <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100 dark:border-zinc-900 dark:text-zinc-400">
                                                         <svg
                                                             xmlns="http://www.w3.org/2000/svg"
                                                             width="12"
@@ -321,14 +321,14 @@ export function Allprojects() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className=" border border-gray-100 rounded-lg lg:mx-0 md:mx-0 mx-8">
+                                    <div className=" border border-gray-100 dark:border-zinc-900 dark:text-zinc-400 rounded-lg lg:mx-0 md:mx-0 mx-8">
                                         <div>
                                             <img
                                                 className="rounded-tl-lg rounded-tr-lg"
                                                 src={finance}
                                             ></img>
                                         </div>
-                                        <div className="bg-gray-50 -mt-2">
+                                        <div className="bg-gray-50 dark:bg-zinc-950 -mt-2">
                                             <div className="mt-2 p-2 mx-2 ">
                                                 <div className="description flex items-center justify-between">
                                                     <div className="font-bold text-xl">
@@ -395,7 +395,7 @@ export function Allprojects() {
                                                         <span> React</span>
                                                     </div>
 
-                                                    <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100">
+                                                    <div className="Tailwind py-[0.07rem] font-semibold px-[0.5rem] rounded-md  flex items-center space-x-1 border border-gray-100 dark:border-zinc-900 dark:text-zinc-400">
                                                         <svg
                                                             xmlns="http://www.w3.org/2000/svg"
                                                             width="12"
