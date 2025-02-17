@@ -40,7 +40,7 @@ export default function About() {
     return (
         <>
             <div
-                className="lg:ml-36 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-br  lg:py-3 lg:px-3 px-2 " // Added opacity and translation
+                className="lg:ml-36 lg:mr-20 lg:mt-24 lg:w-1/2 md:ml-52 md:mr-20 md:mt-24 md:w-1/2 mx-3 mt-8  opacity-0 transform translate-y-10 rounded-lg bg-gradient-to-br  lg:py-3 lg:px-3 px-2 dark:text-zinc-400" // Added opacity and translation
                 id="animatedText"
                 style={localstyle}
             >
