@@ -107,7 +107,7 @@ export default function NavBar() {
                     </svg>
                 </div>
                 <div className="hidden lg:block md:block">
-                    <div className="nav-items  lg:space-x-5 lg:flex-row lg:font-bold md:space-x-5 md:flex-row md:font-bold text">
+                    <div className="nav-items  lg:space-x-3 lg:flex-row lg:font-bold md:space-x-5 md:flex-row md:font-bold lg:text-base lg:mr-20">
                         <NavLink to="/">
                             {" "}
                             <span className="hover:bg-white dark:text-zinc-400 dark:hover:bg-zinc-900 px-2  pt-[0.4rem] pb-[0.5rem] rounded-md hover:cursor-pointer">
