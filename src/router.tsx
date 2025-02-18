@@ -9,11 +9,6 @@ import { Allprojects } from "./components/AllProjects";
 
 const router = [
     {
-        element: <Skills />,
-        path: "/skills",
-    },
-
-    {
         element: <App />,
         path: "/",
         children: [
