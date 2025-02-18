@@ -6,9 +6,17 @@ export default function Skills() {
                 "Angular",
                 "React",
                 "Typescript",
-                "Javascript",
+                "NextJS",
+                "vite",
+                "Figma",
+                "Axios",
+                "RxJS",
+
                 "Tailwind",
                 "shadcn",
+                "Bootstrap",
+                "CCS",
+                "HTML",
             ],
             icon: (
                 <svg
@@ -35,8 +43,15 @@ export default function Skills() {
                 "FastApi",
                 "Typescript",
                 "Flask",
+                "Node.js",
                 "SpringBoot",
+                "ASP.NET Core",
                 "Flask",
+                "SQLAlchemy",
+                "JWT",
+                "Docker",
+                "Jenkins",
+                "PyTest",
             ],
             icon: (
                 <svg
@@ -62,12 +77,20 @@ export default function Skills() {
                 "Lambda",
                 "ec2",
                 "beanstalk",
+                "Load Balancers",
+                "API Gateway",
                 "S3",
+
                 "Route53",
                 "CloudFormation",
                 "CloudFront",
+
+                "SQS",
+                "SNS",
+                "CodePipeline",
                 "CloudWatch",
-                "etc",
+                "RDS",
+                " Auto Scaling",
             ],
             icon: (
                 <svg
@@ -88,7 +111,48 @@ export default function Skills() {
         },
         {
             name: "Databases",
-            technologies: ["Postgres", "MySQL", "SSMS", "Dynamo", "Oracle"],
+            technologies: [
+                "Postgres",
+                "MySQL",
+                "SSMS",
+                "Dynamo",
+                "Oracle",
+                "Redis",
+                "AWS RDS",
+                "AWS Aurora",
+            ],
+            icon: (
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="lucide lucide-database"
+                >
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                </svg>
+            ),
+        },
+        {
+            name: "Data Engineering",
+            technologies: [
+                "AWS Glue",
+                "Apache Airflow",
+                "Hadoop",
+                "Databricks",
+                "Pyspark",
+                "AWS Athena",
+                "Redshift",
+                " EventBridge",
+                "Apache Kafka",
+            ],
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,11 +183,11 @@ export default function Skills() {
 export function Card({ item }: any) {
     return (
         <>
-            <div className="grid grid-cols-2 mx-32">
+            <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto justify-center w-fit h-full ">
                 {item.map((inst: any, index: any) => (
                     <div
                         key={index}
-                        className="px-3 py-3 border  border-gray-100 w-[30rem] mx-6 my-3 rounded-md flex space-x-3 items-center"
+                        className="px-3 py-3 border  border-gray-100 lg:w-[90%] w-[91%] mx-6 my-3 rounded-md flex space-x-3 items-center"
                     >
                         <div className="">{inst.icon}</div>
                         <div className="flex flex-col items-start">
@@ -132,7 +196,7 @@ export function Card({ item }: any) {
                                 {inst.technologies.map(
                                     (tech: string, index: string) => (
                                         <span
-                                            className="bg-slate-50 px-2 mr-1 rounded mt-1"
+                                            className="bg-slate-50 px-2 mr-1 rounded mt-1 "
                                             key={index}
                                         >
                                             {tech}
