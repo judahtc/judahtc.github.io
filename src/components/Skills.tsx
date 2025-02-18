@@ -1,4 +1,42 @@
+import { useEffect, useState } from "react";
+
 export default function Skills() {
+    var themeMode = localStorage.getItem("theme");
+
+    var [lightMode, SetlightMode] = useState(true);
+    if (themeMode == "" || themeMode == " " || themeMode == undefined) {
+        themeMode = "light";
+    }
+
+    const [theme, setTheme] = useState(themeMode);
+
+    useEffect(() => {
+        if (theme == "light") {
+            SetlightMode(true);
+        } else {
+            SetlightMode(false);
+        }
+    }, []);
+    function ToggleTheme() {
+        if (theme == "light") {
+            setTheme("dark");
+            SetlightMode(false);
+
+            localStorage.setItem("theme", "dark");
+        } else {
+            setTheme("light");
+            localStorage.setItem("theme", "light");
+            SetlightMode(true);
+        }
+    }
+
+    useEffect(() => {
+        if (theme == "dark") {
+            document.querySelector("html")?.classList.add("dark");
+        } else {
+            document.querySelector("html")?.classList.remove("dark");
+        }
+    }, [theme]);
     const item: any = [
         {
             name: "Frontend",
@@ -187,7 +225,7 @@ export function Card({ item }: any) {
                 {item.map((inst: any, index: any) => (
                     <div
                         key={index}
-                        className="px-3 py-3 border  border-gray-100 lg:w-[90%] w-[91%] mx-6 my-3 rounded-md flex space-x-3 items-center"
+                        className="px-3 py-3 border  border-gray-100 dark:border-zinc-900 dark:text-zinc-400 lg:w-[90%] w-[91%] mx-6 my-3 rounded-md flex space-x-3 items-center"
                     >
                         <div className="">{inst.icon}</div>
                         <div className="flex flex-col items-start">
@@ -196,7 +234,7 @@ export function Card({ item }: any) {
                                 {inst.technologies.map(
                                     (tech: string, index: string) => (
                                         <span
-                                            className="bg-slate-50 px-2 mr-1 rounded mt-1 "
+                                            className="bg-slate-50 dark:bg-zinc-900 px-2 mr-1 rounded mt-1 "
                                             key={index}
                                         >
                                             {tech}
