@@ -230,7 +230,7 @@ export function Card({ item }: any) {
                 {item.map((inst: any, index: any) => (
                     <div
                         key={index}
-                        className="px-3 py-3 border  border-gray-100 dark:border-zinc-900 dark:text-zinc-400 lg:w-[90%] w-[91%] mx-6 my-3 rounded-md flex space-x-3 items-center"
+                        className="px-3 py-3 border  border-gray-100 dark:border-zinc-900 dark:text-zinc-400 lg:w-[90%] w-[89%] mx-6 my-3 rounded-md flex space-x-3 items-center"
                     >
                         <div className="">{inst.icon}</div>
                         <div className="flex flex-col items-start">
