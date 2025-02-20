@@ -7,6 +7,7 @@ export default function NavBar() {
 
     const [toggle, SetToggle] = useState(false);
     const [theme, setTheme] = useState("light");
+
     function toggleFunc() {
         SetToggle(!toggle);
     }

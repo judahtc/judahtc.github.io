@@ -1,9 +1,28 @@
+import { useEffect, useState } from "react";
 import squarepic from "/src/assets/images/squarepic.png";
 export default function HeroSection() {
     const globalStyle = {
         fontFamily:
             'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
     };
+
+    const fullName = "Judah Chisare";
+    const [displayText, setDisplayText] = useState("");
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        // Skip the effect if we've reached the end of the text
+        if (currentIndex >= fullName.length) {
+            return;
+        }
+
+        const timer = setTimeout(() => {
+            setDisplayText((prev) => prev + fullName[currentIndex]);
+            setCurrentIndex((prev) => prev + 1);
+        }, 150);
+
+        return () => clearTimeout(timer);
+    }, [currentIndex, fullName]);
     return (
         <>
             <div className="dark:text-zinc-400">
@@ -22,7 +41,7 @@ export default function HeroSection() {
                         Hey there, l'm
                     </p>
                     <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50 dark:text-zinc-300">
-                        Judah Chisare
+                        {displayText}
                     </span>
 
                     <p className="mt-7 w-3/4 md:w-3/4 lg:w-[75%] text-lg lg:text-3xl md:text-2xl">
