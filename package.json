@@ -2,7 +2,7 @@
     "name": "portfolio",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://judahtc.github.io",
+    "homepage": "https://judahtc.github.io/judahtc.github.io/index.html",
     "type": "module",
     "scripts": {
         "dev": "vite",
