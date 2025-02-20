@@ -44,7 +44,9 @@ export default function HeroSection() {
                     <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50 dark:text-zinc-300 flex items-center">
                         {displayText}{" "}
                         {write && (
-                            <div className="ml-2 text-3xl font-[100]">|</div>
+                            <div className="ml-2 text-3xl lg:text-5xl font-[100]">
+                                _|
+                            </div>
                         )}
                     </span>
 
