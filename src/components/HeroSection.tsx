@@ -11,7 +11,6 @@ export default function HeroSection() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
-        // Skip the effect if we've reached the end of the text
         if (currentIndex >= fullName.length) {
             return;
         }
