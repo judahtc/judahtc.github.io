@@ -10,7 +10,7 @@ import { Allprojects } from "./components/AllProjects";
 const router = [
     {
         element: <App />,
-        path: "/",
+        path: "",
         children: [
             {
                 element: <Home />,
@@ -18,7 +18,7 @@ const router = [
             },
             {
                 element: <Home />,
-                path: "portfolio",
+                path: "/portfolio",
             },
 
             {
