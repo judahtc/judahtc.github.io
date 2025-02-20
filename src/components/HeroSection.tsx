@@ -9,19 +9,21 @@ export default function HeroSection() {
     const fullName = "Judah Chisare";
     const [displayText, setDisplayText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [write, setWrite] = useState(true);
 
     useEffect(() => {
         if (currentIndex >= fullName.length) {
-            return;
+            return setWrite(false);
         }
 
         const timer = setTimeout(() => {
             setDisplayText((prev) => prev + fullName[currentIndex]);
             setCurrentIndex((prev) => prev + 1);
-        }, 150);
+        }, 160);
 
         return () => clearTimeout(timer);
     }, [currentIndex, fullName]);
+
     return (
         <>
             <div className="dark:text-zinc-400">
@@ -39,8 +41,11 @@ export default function HeroSection() {
                     <p className="text-xl lg:text-3xl md:text-3xl font-bold text-green-700">
                         Hey there, l'm
                     </p>
-                    <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50 dark:text-zinc-300">
-                        {displayText}
+                    <span className="text-3xl lg:text-[4rem] md:text-6xl font-extrabold text-gray-700 z-50 dark:text-zinc-300 flex items-center">
+                        {displayText}{" "}
+                        {write && (
+                            <div className="ml-2 text-3xl font-[100]">|</div>
+                        )}
                     </span>
 
                     <p className="mt-7 w-3/4 md:w-3/4 lg:w-[75%] text-lg lg:text-3xl md:text-2xl">
