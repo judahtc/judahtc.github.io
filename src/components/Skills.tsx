@@ -254,7 +254,7 @@ export function Card({ item }: any) {
             </div>
             <div className="flex justify-between items-center">
                 <div className=""></div>
-                <div className="mx-32 px-10">
+                <div className="lg:mx-40 ">
                     <Button>Contact Me</Button>
                 </div>
             </div>
