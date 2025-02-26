@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { DatabaseBackup, MoonStar, SunMoon } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Skills() {
     var themeMode = localStorage.getItem("theme");
@@ -250,6 +251,12 @@ export function Card({ item }: any) {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="flex justify-between items-center">
+                <div className=""></div>
+                <div className="mx-32 px-10">
+                    <Button>Contact Me</Button>
+                </div>
             </div>
         </>
     );
