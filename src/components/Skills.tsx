@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-import { DatabaseBackup, MoonStar, SunMoon } from "lucide-react";
+import {
+    Contact,
+    DatabaseBackup,
+    Download,
+    MoonStar,
+    SunMoon,
+} from "lucide-react";
 import { Button } from "./ui/button";
 import { Toaster, toast } from "sonner";
 import {
@@ -217,7 +223,6 @@ export default function Skills() {
                     <SunMoon size={24} />
                 )}
             </div>
-
             <div
                 onClick={ToggleTheme}
                 className="fixed block lg:hidden bottom-20 right-5 cursor-pointer lg:top-[1.4rem] text-gray-600 dark:text-zinc-400 lg:right-5 z-50"
@@ -261,12 +266,15 @@ export function Card({ item }: any) {
                     </div>
                 ))}
             </div>
-            <div className="flex justify-between items-center">
+            <hr className="lg:mx-36 mx-7 mt-6 border-zinc-900"></hr>
+            <div className="flex justify-between items-center mt-5">
                 <div className=""></div>
                 <div className="lg:mx-40 mx-7">
                     <Dialog>
                         <DialogTrigger>
-                            <Button>Resume</Button>
+                            <Button className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border border-gray-200">
+                                Resume <Download />
+                            </Button>
                         </DialogTrigger>
                         <DialogContent>
                             <DialogHeader>
@@ -289,7 +297,7 @@ export function Card({ item }: any) {
                             })
                         }
                     >
-                        Contact Me
+                        Contact Me <Contact />
                     </Button>
                 </div>
             </div>
