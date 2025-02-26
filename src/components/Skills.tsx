@@ -12,6 +12,7 @@ import {
     Dialog,
     DialogContent,
     DialogDescription,
+    DialogFooter,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
@@ -266,7 +267,7 @@ export function Card({ item }: any) {
                     </div>
                 ))}
             </div>
-            <hr className="lg:mx-36 mx-7 mt-6 border-zinc-900"></hr>
+            <hr className="lg:mx-36 mx-7 mt-6 dark:border-zinc-900"></hr>
             <div className="flex justify-between items-center mt-5">
                 <div className=""></div>
                 <div className="lg:mx-40 mx-7">
@@ -278,15 +279,23 @@ export function Card({ item }: any) {
                         </DialogTrigger>
                         <DialogContent>
                             <DialogHeader>
-                                <DialogTitle>
+                                <DialogTitle className="pb-2">
                                     Are you absolutely sure?
                                 </DialogTitle>
-                                <DialogDescription>
-                                    This action cannot be undone. This will
-                                    permanently delete your account and remove
-                                    your data from our servers.
+                                <hr className="pt-2 border-gray-100 dark:border-zinc-900"></hr>
+                                <DialogDescription className="py-3">
+                                    This action will Download my CV from my
+                                    google drive to your device, click confirm
+                                    to continue.
                                 </DialogDescription>
                             </DialogHeader>
+                            <hr className="pt-2 border-gray-100 dark:border-zinc-900"></hr>
+
+                            <DialogFooter>
+                                <Button className="bg-transparent text-zinc-900 border border-gray-100 dark:bg-transparency dark:border-zinc-900 dark:text-zinc-400 hover:bg-zinc-900">
+                                    Confirm{" "}
+                                </Button>
+                            </DialogFooter>
                         </DialogContent>
                     </Dialog>
                     <Button
