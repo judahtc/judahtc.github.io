@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {
+    ArrowRight,
     Contact,
     DatabaseBackup,
     Download,
@@ -292,8 +293,16 @@ export function Card({ item }: any) {
                             <hr className="pt-2 border-gray-100 dark:border-zinc-900"></hr>
 
                             <DialogFooter>
-                                <Button className="bg-transparent text-zinc-900 border border-gray-100 dark:bg-transparency dark:border-zinc-900 dark:text-zinc-400 hover:bg-zinc-900">
-                                    Confirm{" "}
+                                <Button
+                                    onClick={() =>
+                                        window.open(
+                                            "https://drive.usercontent.google.com/u/0/uc?id=1bvldXKYswjGPBBtjz6uMf2cPtlrX97fl&export=download",
+                                            "_blank"
+                                        )
+                                    }
+                                    className="bg-transparent text-zinc-900 border border-gray-100 dark:bg-transparency dark:border-zinc-900 dark:text-zinc-400 hover:bg-zinc-900"
+                                >
+                                    Confirm <ArrowRight />
                                 </Button>
                             </DialogFooter>
                         </DialogContent>
