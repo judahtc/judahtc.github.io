@@ -256,13 +256,19 @@ export function Card({ item }: any) {
             <div className="flex justify-between items-center">
                 <div className=""></div>
                 <div className="lg:mx-40 mx-7">
-                    <Button onClick={() => toast("Event has been created.")}>
+                    <Button
+                        onClick={() =>
+                            toast.success(
+                                "Click on the whatsApp icon bellow to contact me."
+                            )
+                        }
+                    >
                         Contact Me
                     </Button>
                 </div>
             </div>
 
-            <Toaster />
+            <Toaster position="top-right" />
         </>
     );
 }
