@@ -274,7 +274,7 @@ export function Card({ item }: any) {
                 <div className="lg:mx-40 mx-7">
                     <Dialog>
                         <DialogTrigger>
-                            <Button className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border border-gray-200">
+                            <Button className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200">
                                 Resume <Download />
                             </Button>
                         </DialogTrigger>
@@ -300,7 +300,7 @@ export function Card({ item }: any) {
                                             "_blank"
                                         )
                                     }
-                                    className="bg-transparent text-zinc-900 border border-gray-100 dark:bg-transparency dark:border-zinc-900 dark:text-zinc-400 hover:bg-zinc-900"
+                                    className="bg-transparent text-zinc-900 border border-gray-100 dark:bg-transparency dark:border-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-900 hover:bg-gray-50"
                                 >
                                     Confirm <ArrowRight />
                                 </Button>
