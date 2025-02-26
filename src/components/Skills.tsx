@@ -2,6 +2,14 @@ import { useEffect, useState } from "react";
 import { DatabaseBackup, MoonStar, SunMoon } from "lucide-react";
 import { Button } from "./ui/button";
 import { Toaster, toast } from "sonner";
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from "./ui/dialog";
 
 export default function Skills() {
     var themeMode = localStorage.getItem("theme");
@@ -256,6 +264,23 @@ export function Card({ item }: any) {
             <div className="flex justify-between items-center">
                 <div className=""></div>
                 <div className="lg:mx-40 mx-7">
+                    <Dialog>
+                        <DialogTrigger>
+                            <Button>Resume</Button>
+                        </DialogTrigger>
+                        <DialogContent>
+                            <DialogHeader>
+                                <DialogTitle>
+                                    Are you absolutely sure?
+                                </DialogTitle>
+                                <DialogDescription>
+                                    This action cannot be undone. This will
+                                    permanently delete your account and remove
+                                    your data from our servers.
+                                </DialogDescription>
+                            </DialogHeader>
+                        </DialogContent>
+                    </Dialog>
                     <Button
                         onClick={() =>
                             toast.success("Contact me", {
