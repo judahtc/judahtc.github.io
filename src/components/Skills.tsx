@@ -258,9 +258,10 @@ export function Card({ item }: any) {
                 <div className="lg:mx-40 mx-7">
                     <Button
                         onClick={() =>
-                            toast.success(
-                                "Click on the whatsApp icon bellow to contact me."
-                            )
+                            toast.success("Contact me", {
+                                description:
+                                    "Click on the whatsApp icon bellow to contact me.",
+                            })
                         }
                     >
                         Contact Me
