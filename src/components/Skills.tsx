@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { DatabaseBackup, MoonStar, SunMoon } from "lucide-react";
 import { Button } from "./ui/button";
+import { Toaster, toast } from "sonner";
 
 export default function Skills() {
     var themeMode = localStorage.getItem("theme");
@@ -255,9 +256,13 @@ export function Card({ item }: any) {
             <div className="flex justify-between items-center">
                 <div className=""></div>
                 <div className="lg:mx-40 mx-7">
-                    <Button>Contact Me</Button>
+                    <Button onClick={() => toast("Event has been created.")}>
+                        Contact Me
+                    </Button>
                 </div>
             </div>
+
+            <Toaster />
         </>
     );
 }
