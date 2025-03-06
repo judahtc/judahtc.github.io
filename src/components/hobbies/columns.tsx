@@ -1,17 +1,17 @@
 import { ColumnDef } from "@tanstack/react-table";
-import { Payment } from "./lodder";
+import { Hobby } from "./lodder";
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Hobby>[] = [
     {
-        accessorKey: "status",
-        header: "Status",
+        accessorKey: "id",
+        header: "ID",
     },
     {
-        accessorKey: "email",
-        header: "Email",
+        accessorKey: "category",
+        header: "Category",
     },
     {
-        accessorKey: "amount",
-        header: "Amount",
+        accessorKey: "description",
+        header: "Description",
     },
 ];
