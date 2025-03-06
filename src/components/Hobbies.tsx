@@ -5,9 +5,11 @@ export function Hobbies() {
     return (
         <>
             {" "}
-            <div className="ml-7 mb-3 font-semibold text-lg">Hobbies</div>
-            <hr className="mx-7 border-gray-50"></hr>
-            <div className="w-1/2 ml-7 mt-5">
+            <div className="lg:ml-7 mx-2 mb-3 font-semibold lg:text-lg">
+                Hobbies
+            </div>
+            <hr className="lg:mx-7 mx-2 border-gray-50"></hr>
+            <div className="lg:w-1/2 w-full ml-7 mt-5">
                 <DataTable data={hobbies} columns={columns}></DataTable>
             </div>
         </>
