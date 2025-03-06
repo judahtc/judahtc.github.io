@@ -297,6 +297,7 @@ export function Card({ item }: any) {
 
                             <DialogFooter>
                                 <Button
+                                    size={"sm"}
                                     onClick={() =>
                                         window.open(
                                             "https://drive.usercontent.google.com/u/0/uc?id=1bvldXKYswjGPBBtjz6uMf2cPtlrX97fl&export=download",
