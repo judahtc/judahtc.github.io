@@ -311,6 +311,7 @@ export function Card({ item }: any) {
                         </DialogContent>
                     </Dialog>
                     <Button
+                        size={"sm"}
                         onClick={() =>
                             toast.success("Contact me", {
                                 description:
