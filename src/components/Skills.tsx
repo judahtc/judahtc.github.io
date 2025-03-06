@@ -18,9 +18,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "./ui/dialog";
-import { hobbies } from "./hobbies/lodder";
-import { columns } from "./hobbies/columns";
-import { DataTable } from "./hobbies/data-table";
+
 export default function Skills() {
     var themeMode = localStorage.getItem("theme");
 
@@ -239,9 +237,7 @@ export default function Skills() {
             </div>
             <Card item={item} />
 
-            <div className="mx-40 mt-20 mb-20">
-                <DataTable data={hobbies} columns={columns}></DataTable>
-            </div>
+            <div className="mx-40 mt-20 mb-20"></div>
         </>
     );
 }
