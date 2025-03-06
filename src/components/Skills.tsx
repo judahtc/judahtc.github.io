@@ -274,7 +274,10 @@ export function Card({ item }: any) {
                 <div className="lg:mx-40 mx-7">
                     <Dialog>
                         <DialogTrigger>
-                            <Button className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200">
+                            <Button
+                                size={"sm"}
+                                className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200"
+                            >
                                 Resume <Download />
                             </Button>
                         </DialogTrigger>
