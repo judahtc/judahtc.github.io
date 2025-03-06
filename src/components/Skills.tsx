@@ -278,7 +278,7 @@ export function Card({ item }: any) {
                         <DialogTrigger>
                             <Button
                                 size={"sm"}
-                                className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border dark:hover:bg-zinc-900 hover:bg-gray-50 border-gray-200"
+                                className="mr-3 bg-transparent text-zinc-900 dark:text-zinc-400 border border-gray-100 dark:border-zinc-900 dark:hover:bg-zinc-900 hover:bg-gray-50"
                             >
                                 Resume <Download />
                             </Button>
@@ -314,6 +314,7 @@ export function Card({ item }: any) {
                         </DialogContent>
                     </Dialog>
                     <Button
+                        className="bg-transparent text-zinc-900 dark:text-zinc-400 border border-gray-100 dark:border-zinc-900 dark:hover:bg-zinc-900 hover:bg-gray-50"
                         size={"sm"}
                         onClick={() =>
                             toast.success("Contact me", {
