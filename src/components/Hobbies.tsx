@@ -9,7 +9,7 @@ export function Hobbies() {
                 Hobbies
             </div>
             <hr className="lg:mx-7 mx-2 border-gray-50"></hr>
-            <div className="lg:w-1/2 w-full ml-7 mt-5">
+            <div className="lg:w-1/2  w-full lg:ml-7 mx-2 mt-5">
                 <DataTable data={hobbies} columns={columns}></DataTable>
             </div>
         </>
