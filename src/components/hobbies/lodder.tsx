@@ -1,21 +1,33 @@
-export type Payment = {
+export type Hobby = {
     id: string;
-    amount: number;
-    status: "pending" | "processing" | "success" | "failed";
-    email: string;
+    category: string;
+    description: string;
 };
 
-export const payments: Payment[] = [
+export const hobbies: Hobby[] = [
     {
-        id: "728ed52f",
-        amount: 100,
-        status: "pending",
-        email: "m@example.com",
+        id: "1",
+        category: "Sports",
+        description: "Golf 🏌️, Cricket 🏏, Soccer ⚽",
     },
     {
-        id: "489e1d42",
-        amount: 125,
-        status: "processing",
-        email: "example@gmail.com",
+        id: "2",
+        category: "Games",
+        description: "Chess ♟️",
+    },
+    {
+        id: "3",
+        category: "Music",
+        description: "Playing the Piano 🎹",
+    },
+    {
+        id: "4",
+        category: "Nature",
+        description: "Love for Nature 🌿🌄",
+    },
+    {
+        id: "5",
+        category: "Pet",
+        description: "Dog 🐶",
     },
 ];
