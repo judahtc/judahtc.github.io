@@ -5,6 +5,7 @@ import MovingSkills from "./components/MovingSkills";
 import Events from "./components/Events";
 import Home from "./components/Home";
 import { Allprojects } from "./components/AllProjects";
+import { Hobbies } from "./components/Hobbies";
 // import path from "path";
 
 const router = [
@@ -28,6 +29,10 @@ const router = [
             {
                 element: <Skills />,
                 path: "/skills",
+            },
+            {
+                element: <Hobbies />,
+                path: "/hobbies",
             },
         ],
     },
