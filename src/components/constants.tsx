@@ -7,3 +7,5 @@ export const linkedin =
 export const twitter = "https://www.linkedin.com/in/judah-t-chisare-a1b998174/";
 export const facebook =
     "https://www.linkedin.com/in/judah-t-chisare-a1b998174/";
+export const instagram =
+    "https://www.linkedin.com/in/judah-t-chisare-a1b998174/";
