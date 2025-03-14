@@ -6,6 +6,8 @@ export default function SkillsPic() {
             <div className="mt-16 mr-32 myself">
                 <img src={skills} alt="Skills" className="oval-image" />
             </div>
+
+            <></>
         </>
     );
 }
